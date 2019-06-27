@@ -28,7 +28,7 @@ Runs 🏃‍♀️ 🏃🏻‍♂️ the express server.
 
 Mongo DB Atlas cloud database cluster set up for Node.js
 Modify the .env file with your Mongo DB Atlas connection string information to connect your cluster to the backend.
-Example: mongodb+srv://<user>:<password>@exetracker-felix.gcp.mongodb.net/test?retryWrites=true&w=majority
+Example: mongodb+srv://user:password@exetracker-felix.gcp.mongodb.net/test?retryWrites=true&w=majority
 
 ## Technologies and Libraries used
 

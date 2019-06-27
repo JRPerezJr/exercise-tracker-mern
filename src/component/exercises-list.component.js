@@ -9,7 +9,7 @@ const Exercise = props => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0, 10)}</td>
     <td>
-      <Link className="btn btn-primary" to={"/edit" + props.exercise._id}>
+      <Link className="btn btn-primary" to={"/edit/" + props.exercise._id}>
         Edit
       </Link>{" "}
       |{" "}

@@ -66,7 +66,7 @@ export default class ExercisesList extends Component {
   render() {
     return (
       <div>
-        <h3>Logged Exercises</h3>
+        <h3>Logged Exercises Per User</h3>
         <table className="table">
           <thead className="thead-light">
             <tr>

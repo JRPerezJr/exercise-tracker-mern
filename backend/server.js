@@ -1,4 +1,4 @@
-//Import cors express and mongoose 
+//Import cors express and mongoose
 const express = require('express');
 const cors = require('cors');
 const mongoose = require('mongoose');
@@ -14,15 +14,15 @@ app.use(express.json());
 
 const uri = process.env.ATLAS_URI;
 mongoose.connect(uri, {
-    useNewUrlParser: true,
-    useCreateIndex: true
+  useNewUrlParser: true,
+  useCreateIndex: true,
 });
 
 //Connect to my MongoDB Atlas cluster and confirm
 const connection = mongoose.connection;
 connection.once('open', () => {
-    console.log("MongoDB Atlas database connection established successfully!");
-})
+  console.log('MongoDB Atlas database connection established successfully!');
+});
 
 //import these files from the routes folder
 const exercisesRouter = require('./routes/exercises');
@@ -34,5 +34,5 @@ app.use('/users', usersRouter);
 
 //Listen on port 5000 when server is running
 app.listen(port, () => {
-    console.log(`Server Flying High on port: ${port}`);
+  console.log(`Server Flying High on port: ${port}`);
 });

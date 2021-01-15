@@ -20,15 +20,20 @@ Installs all dependencies.
 
 In the backend directory, you can run:
 
-### `nodemon server.js`
+### `nodemon server.js` `npm run start` `yarn start`
 
 Runs 🏃‍♀️ 🏃🏻‍♂️ the express server.
 
 ## Requirements
 
-Mongo DB Atlas cloud database cluster set up for Node.js
+Mongo DB Atlas cloud database cluster set up for Node.js:
 Modify the .env file with your Mongo DB Atlas connection string information to connect your cluster to the backend.
-Example: mongodb+srv://user:password@exetracker-felix.gcp.mongodb.net/test?retryWrites=true&w=majority
+
+1. Create at the root of your project a `.env` file.
+
+| Environment variable      | Example                                                                                                      | Description                                                                                                                                                                                                                                                                            |
+|---------------------------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `ATLAS_URI`            | `mongodb+srv://<user:password>@exetracker-felix.gcp.mongodb.net/test?retryWrites=true&w=majority`                                                                                                       | MongoDB Atlas credentials |
 
 ## Technologies and Libraries used
 
